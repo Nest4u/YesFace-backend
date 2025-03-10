@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "addresses",
+  "info": {
+    "singularName": "addresse",
+    "pluralName": "addresses",
+    "displayName": "Addresse",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "addresses"
+    },
+    "street": {
+      "type": "text"
+    },
+    "city": {
+      "type": "string"
+    },
+    "postalcode": {
+      "type": "biginteger"
+    },
+    "country": {
+      "type": "string"
+    },
+    "order": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::order.order",
+      "mappedBy": "addresse"
+    },
+    "phone": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "product_tens",
+  "info": {
+    "singularName": "product-ten",
+    "pluralName": "product-tens",
+    "displayName": "product-ten",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "img": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}
